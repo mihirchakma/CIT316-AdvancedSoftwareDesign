@@ -1,0 +1,1500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CIT316 — Advanced Software Design | Complete Textbook</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ── NAVIGATION ── -->
+<nav class="nav">
+  <div class="nav-brand"><span>CIT</span>316 — Advanced Software Design</div>
+  <ul class="nav-links">
+    <li><a href="#ch1">Ch1 Intro</a></li>
+    <li><a href="#ch2">Ch2 User-Oriented</a></li>
+    <li><a href="#ch3">Ch3 Dev Approaches</a></li>
+    <li><a href="#ch4">Ch4 DBTF</a></li>
+    <li><a href="#ch5">Ch5 SE Design</a></li>
+    <li><a href="#ch6">Ch6 EDP Audit</a></li>
+    <li><a href="#ch7">Ch7 Maintenance</a></li>
+    <li><a href="#ch8">Ch8 Cost Estimation</a></li>
+    <li><a href="#quickref">Quick Ref</a></li>
+  </ul>
+</nav>
+
+<!-- ── HERO ── -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-badge">📘 Complete Textbook · All Levels</div>
+    <h1 class="hero-title">Advanced<br><span class="accent">Software Design</span></h1>
+    <p class="hero-subtitle">CIT316 — A comprehensive, visually rich textbook covering every topic from SDLC to COCOMO II, designed for all skill levels.</p>
+    <div class="hero-stats">
+      <div class="stat-pill"><span class="num">8</span><div class="label">Core Chapters</div></div>
+      <div class="stat-pill"><span class="num">4</span><div class="label">Learning Outcomes</div></div>
+      <div class="stat-pill"><span class="num">40+</span><div class="label">Key Concepts</div></div>
+      <div class="stat-pill"><span class="num">∞</span><div class="label">Real Examples</div></div>
+    </div>
+    <div class="chapter-pills">
+      <a href="#ch1" class="chapter-pill"><span class="ch-num">1</span> Introduction to SDLC</a>
+      <a href="#ch2" class="chapter-pill"><span class="ch-num">2</span> User-Oriented & Outsourcing</a>
+      <a href="#ch3" class="chapter-pill"><span class="ch-num">3</span> RAD, JAD, XP, CASE</a>
+      <a href="#ch4" class="chapter-pill"><span class="ch-num">4</span> DBTF Technology</a>
+      <a href="#ch5" class="chapter-pill"><span class="ch-num">5</span> SE Design</a>
+      <a href="#ch6" class="chapter-pill"><span class="ch-num">6</span> EDP Auditing</a>
+      <a href="#ch7" class="chapter-pill"><span class="ch-num">7</span> Software Maintenance</a>
+      <a href="#ch8" class="chapter-pill"><span class="ch-num">8</span> Cost Estimation</a>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     CHAPTER 1
+═══════════════════════════════════════════════════════════ -->
+<div id="ch1" class="book-section">
+  <div class="chapter-header ch1">
+    <div class="ch-number">01</div>
+    <div class="ch-meta">
+      <div class="ch-label">Chapter One</div>
+      <div class="ch-title">Introduction to Software Development</div>
+      <div class="ch-subtitle">Lifecycle · Models · Methodologies · Standards · Metrics · Documentation · Training</div>
+      <span class="ch-lo">📌 LO1 — Software Development Lifecycle & Methodologies</span>
+    </div>
+  </div>
+
+  <h2 class="section-title" data-num="1.1">What is Software Development?</h2>
+  <p class="body-text">Software development is the systematic, disciplined process of conceiving, designing, programming, testing, and maintaining applications, frameworks, or other software components. It combines engineering rigor with creative problem-solving to produce reliable, useful systems.</p>
+
+  <div class="analogy-box">
+    <div class="ab-label">🏗️ Real-World Analogy</div>
+    <p>Think of software development like constructing a building. You need a <strong>blueprint</strong> (requirements & design), <strong>workers following building codes</strong> (methodology & standards), <strong>inspectors at each stage</strong> (testing), and a <strong>maintenance crew</strong> after handover (maintenance). Skip any stage and the building — or the software — may collapse.</p>
+  </div>
+
+  <h2 class="section-title" data-num="1.2">The Software Development Life Cycle (SDLC)</h2>
+  <p class="body-text">The SDLC provides a structured framework that defines exactly what needs to happen, in what order, and why — transforming a vague idea into a reliable, delivered product.</p>
+
+  <div class="phases-flow animate-on-scroll">
+    <div class="phase-item">
+      <div class="phase-block ph1">
+        <div class="phase-icon">🔭</div>
+        <div class="phase-num">1</div>
+        <div class="phase-name">Planning</div>
+      </div>
+    </div>
+    <div class="phase-item">
+      <div class="phase-block ph2">
+        <div class="phase-icon">📋</div>
+        <div class="phase-num">2</div>
+        <div class="phase-name">Requirements</div>
+      </div>
+    </div>
+    <div class="phase-item">
+      <div class="phase-block ph3">
+        <div class="phase-icon">✏️</div>
+        <div class="phase-num">3</div>
+        <div class="phase-name">Design</div>
+      </div>
+    </div>
+    <div class="phase-item">
+      <div class="phase-block ph4">
+        <div class="phase-icon">💻</div>
+        <div class="phase-num">4</div>
+        <div class="phase-name">Implementation</div>
+      </div>
+    </div>
+    <div class="phase-item">
+      <div class="phase-block ph5">
+        <div class="phase-icon">🧪</div>
+        <div class="phase-num">5</div>
+        <div class="phase-name">Testing</div>
+      </div>
+    </div>
+    <div class="phase-item">
+      <div class="phase-block ph6">
+        <div class="phase-icon">🚀</div>
+        <div class="phase-num">6</div>
+        <div class="phase-name">Deployment</div>
+      </div>
+    </div>
+    <div class="phase-item">
+      <div class="phase-block ph7 last">
+        <div class="phase-icon">🔧</div>
+        <div class="phase-num">7</div>
+        <div class="phase-name">Maintenance</div>
+      </div>
+    </div>
+  </div>
+
+  <table class="info-table animate-on-scroll">
+    <thead><tr><th>#</th><th>Phase</th><th>Key Activities</th><th>Key Question</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>Planning</td><td>Feasibility study, scope definition, risk ID, resource allocation, schedule creation</td><td><em>CAN we build it?</em></td></tr>
+      <tr><td>2</td><td>Requirements Analysis</td><td>Stakeholder interviews, use cases, user stories, requirements specification document</td><td><em>WHAT should it do?</em></td></tr>
+      <tr><td>3</td><td>System Design</td><td>Architecture diagrams, database schema, UI wireframes, technology selection</td><td><em>HOW will it work?</em></td></tr>
+      <tr><td>4</td><td>Implementation</td><td>Source code writing, version control, code reviews, unit test writing</td><td><em>Build it now</em></td></tr>
+      <tr><td>5</td><td>Testing &amp; Integration</td><td>Unit, integration, system, UAT testing; bug tracking; regression testing</td><td><em>Does it work correctly?</em></td></tr>
+      <tr><td>6</td><td>Deployment</td><td>Phased rollout, parallel running, user training, go-live</td><td><em>Release to users</em></td></tr>
+      <tr><td>7</td><td>Maintenance</td><td>Bug fixes, enhancements, performance tuning, security patching</td><td><em>Keep it working</em></td></tr>
+    </tbody>
+  </table>
+
+  <h2 class="section-title" data-num="1.3">SDLC Models — Choosing the Right Approach</h2>
+  <p class="body-text">Different projects need different structures. SDLC models define HOW phases are organized — sequentially, iteratively, or spirally.</p>
+
+  <h3 class="sub-title">Waterfall Model</h3>
+  <p class="body-text">The oldest, most linear model. Each phase must be 100% complete before the next begins. Best for projects with fixed, well-understood requirements.</p>
+  <div class="comparison-grid animate-on-scroll">
+    <div class="cmp-card good">
+      <div class="cmp-title">✅ Advantages</div>
+      <ul>
+        <li>Simple, easy to understand and manage</li>
+        <li>Clear milestones and deliverables</li>
+        <li>Extensive documentation produced</li>
+        <li>Works well for fixed-scope projects</li>
+        <li>Easy for new team members to onboard</li>
+      </ul>
+    </div>
+    <div class="cmp-card bad">
+      <div class="cmp-title">❌ Disadvantages</div>
+      <ul>
+        <li>No working software until late in cycle</li>
+        <li>Cannot accommodate changing requirements</li>
+        <li>Integration issues found very late</li>
+        <li>Customer sees product only at the end</li>
+        <li>Errors discovered late are extremely costly</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3 class="sub-title">Agile / Scrum Model</h3>
+  <p class="body-text">Agile is a flexible, iterative approach delivering working software in short <strong>sprints</strong> (1–4 weeks). Built on 4 core values from the Agile Manifesto:</p>
+
+  <div class="info-box blue">
+    <div class="ib-title">⚡ The Agile Manifesto — 4 Core Values</div>
+    <ul>
+      <li><strong>Individuals & interactions</strong> OVER processes and tools</li>
+      <li><strong>Working software</strong> OVER comprehensive documentation</li>
+      <li><strong>Customer collaboration</strong> OVER contract negotiation</li>
+      <li><strong>Responding to change</strong> OVER following a plan</li>
+    </ul>
+  </div>
+
+  <div class="scrum-grid animate-on-scroll">
+    <div class="scrum-card"><div class="sc-role">Product Owner</div><p>Represents stakeholders; owns and prioritizes the product backlog</p></div>
+    <div class="scrum-card"><div class="sc-role">Scrum Master</div><p>Facilitates the process; removes obstacles; coaches the team</p></div>
+    <div class="scrum-card"><div class="sc-role">Development Team</div><p>Cross-functional, self-organizing team that does the actual work</p></div>
+    <div class="scrum-card"><div class="sc-role">Sprint (1–4 weeks)</div><p>Time-boxed iteration producing a potentially shippable increment</p></div>
+    <div class="scrum-card"><div class="sc-role">Daily Standup</div><p>15-min meeting: What did I do? What will I do? Any blockers?</p></div>
+    <div class="scrum-card"><div class="sc-role">Sprint Retrospective</div><p>Team reflects on what went well and what to improve next sprint</p></div>
+  </div>
+
+  <h3 class="sub-title">Spiral Model</h3>
+  <p class="body-text">Combines iteration with systematic risk analysis. Each loop of the spiral covers 4 quadrants: Planning → Risk Analysis → Development → Evaluation. Best for large, high-risk projects.</p>
+
+  <h3 class="sub-title">V-Model (Verification & Validation)</h3>
+  <table class="info-table animate-on-scroll">
+    <thead><tr><th>Development Phase (Left V)</th><th>↔</th><th>Test Phase (Right V)</th></tr></thead>
+    <tbody>
+      <tr><td>Requirements Analysis</td><td>validates</td><td>Acceptance Testing (UAT)</td></tr>
+      <tr><td>System Design</td><td>validates</td><td>System Testing</td></tr>
+      <tr><td>Architectural Design</td><td>validates</td><td>Integration Testing</td></tr>
+      <tr><td>Module Design</td><td>validates</td><td>Unit Testing</td></tr>
+      <tr><td colspan="3" style="text-align:center;font-style:italic;color:#6b7280">↕ Implementation (bottom of the V)</td></tr>
+    </tbody>
+  </table>
+
+  <h2 class="section-title" data-num="1.4">Standards and Metrics</h2>
+  <table class="info-table animate-on-scroll">
+    <thead><tr><th>Metric</th><th>Definition</th><th>What It Tells You</th></tr></thead>
+    <tbody>
+      <tr><td>Lines of Code (LOC)</td><td>Count of source code lines</td><td>Rough size measure; language-dependent</td></tr>
+      <tr><td>Function Points (FP)</td><td>Functionality from user perspective</td><td>Language-independent size measure</td></tr>
+      <tr><td>Cyclomatic Complexity</td><td>Number of independent code paths</td><td>Higher = harder to test & maintain</td></tr>
+      <tr><td>Defect Density</td><td>Defects per 1000 LOC (KLOC)</td><td>Lower = better quality</td></tr>
+      <tr><td>MTTF</td><td>Mean Time to Failure</td><td>Higher = more reliable system</td></tr>
+      <tr><td>Code Coverage</td><td>% of code executed during tests</td><td>Higher = more thorough testing</td></tr>
+    </tbody>
+  </table>
+
+  <h2 class="section-title" data-num="1.5">Procedures, Installation & Documentation</h2>
+
+  <div class="steps-grid animate-on-scroll">
+    <div class="step-card">
+      <div class="step-num" style="background:var(--blue)">1</div>
+      <div class="step-content">
+        <div class="step-title">Pre-Installation Planning</div>
+        <p>Review hardware requirements, verify compatibility, back up existing data, notify stakeholders of downtime window, prepare rollback plan.</p>
+      </div>
+    </div>
+    <div class="step-card">
+      <div class="step-num" style="background:var(--teal)">2</div>
+      <div class="step-content">
+        <div class="step-title">Environment Preparation</div>
+        <p>Configure servers, install dependencies and runtimes, set up databases, configure network access and firewall rules.</p>
+      </div>
+    </div>
+    <div class="step-card">
+      <div class="step-num" style="background:var(--amber)">3</div>
+      <div class="step-content">
+        <div class="step-title">Software Installation</div>
+        <p>Run installer or deploy packages, configure application settings, set up user accounts, assign permissions and roles.</p>
+      </div>
+    </div>
+    <div class="step-card">
+      <div class="step-num" style="background:var(--rose)">4</div>
+      <div class="step-content">
+        <div class="step-title">Testing & Verification</div>
+        <p>Run smoke tests to verify basic functionality, test critical business workflows, confirm all integrations work correctly.</p>
+      </div>
+    </div>
+    <div class="step-card">
+      <div class="step-num" style="background:var(--purple)">5</div>
+      <div class="step-content">
+        <div class="step-title">User Training & Handover</div>
+        <p>Train end users on the new system, distribute user manuals, hand over to operations team with full documentation.</p>
+      </div>
+    </div>
+  </div>
+
+  <h3 class="sub-title">Types of Documentation</h3>
+  <table class="info-table animate-on-scroll">
+    <thead><tr><th>Document Type</th><th>Primary Audience</th><th>Contents</th></tr></thead>
+    <tbody>
+      <tr><td>Requirements Specification</td><td>PM, developers, clients</td><td>Use cases, user stories, functional &amp; non-functional specs</td></tr>
+      <tr><td>Architecture Document</td><td>Developers, architects</td><td>System diagrams, database schemas, API specifications</td></tr>
+      <tr><td>User Manual</td><td>End users</td><td>Step-by-step instructions, screenshots, FAQs</td></tr>
+      <tr><td>API Documentation</td><td>Integrating developers</td><td>Endpoints, parameters, example requests and responses</td></tr>
+      <tr><td>Test Documentation</td><td>QA team</td><td>Test plans, test cases, test results, defect reports</td></tr>
+      <tr><td>Operations Manual</td><td>IT/DevOps team</td><td>Deployment guide, monitoring setup, backup &amp; recovery</td></tr>
+    </tbody>
+  </table>
+
+  <div class="chapter-summary">
+    <h3>📚 Chapter 1 — Key Takeaways</h3>
+    <ul>
+      <li>The SDLC provides 7 structured phases: Planning → Requirements → Design → Implementation → Testing → Deployment → Maintenance</li>
+      <li>Different SDLC models (Waterfall, Agile, Spiral, V-Model) suit different project types and risk profiles</li>
+      <li>Scrum implements Agile using Product Owner, Scrum Master, Development Team, and time-boxed Sprints</li>
+      <li>Standards (ISO 25010, CMMI) and metrics (LOC, Function Points, Cyclomatic Complexity) provide objective quality measures</li>
+      <li>Good documentation — requirements, architecture, user manuals, test docs — is the lifeline of software</li>
+    </ul>
+  </div>
+</div>
+
+<div class="section-sep"></div>
+
+<!-- ════════════════════════════════════════════════════════
+     CHAPTER 2
+═══════════════════════════════════════════════════════════ -->
+<div id="ch2" class="book-section">
+  <div class="chapter-header ch2">
+    <div class="ch-number">02</div>
+    <div class="ch-meta">
+      <div class="ch-label">Chapter Two</div>
+      <div class="ch-title">User-Oriented Systems &amp; Outsourcing Decisions</div>
+      <div class="ch-subtitle">UCD · Personas · Build vs Buy · Vendor Assessment · Implementation</div>
+      <span class="ch-lo">📌 LO2 — User-Oriented Approach &amp; Outsourcing Analysis</span>
+    </div>
+  </div>
+
+  <h2 class="section-title" data-num="2.1">Tailoring Systems for End Users</h2>
+  <p class="body-text">A user-oriented approach places the <strong>end user at the absolute center</strong> of the design process. Systems built without considering real users often fail — not due to technical problems, but because users find them confusing, slow, or irrelevant to their actual work.</p>
+
+  <div class="metrics-row animate-on-scroll">
+    <div class="metric-card">
+      <span class="m-value">70%</span>
+      <span class="m-label">of software failures</span>
+      <p class="m-desc">are caused by poor requirements &amp; user involvement — NOT technical issues</p>
+    </div>
+    <div class="metric-card">
+      <span class="m-value">5×</span>
+      <span class="m-label">cheaper to fix early</span>
+      <p class="m-desc">Finding a usability issue in design vs. after release</p>
+    </div>
+    <div class="metric-card">
+      <span class="m-value">↑84%</span>
+      <span class="m-label">higher adoption rate</span>
+      <p class="m-desc">When users are involved in the design process throughout</p>
+    </div>
+  </div>
+
+  <h3 class="sub-title">User-Centered Design (UCD) Process</h3>
+  <div class="steps-grid animate-on-scroll">
+    <div class="step-card">
+      <div class="step-num" style="background:var(--teal)">1</div>
+      <div class="step-content">
+        <div class="step-title">Understand Context of Use</div>
+        <p>Research who users are: their jobs, goals, skill levels, frustrations, and environments. Use interviews, observations (contextual inquiry), and surveys.</p>
+      </div>
+    </div>
+    <div class="step-card">
+      <div class="step-num" style="background:var(--teal)">2</div>
+      <div class="step-content">
+        <div class="step-title">Specify User Requirements</div>
+        <p>Turn user research into specific, measurable requirements. Create personas, user stories ("As a [user], I want [goal], so that [reason]"), and use cases.</p>
+      </div>
+    </div>
+    <div class="step-card">
+      <div class="step-num" style="background:var(--teal)">3</div>
+      <div class="step-content">
+        <div class="step-title">Produce Design Solutions</div>
+        <p>Create wireframes (structure), mockups (visual), and interactive prototypes. Focus on solving user problems before aesthetics.</p>
+      </div>
+    </div>
+    <div class="step-card">
+      <div class="step-num" style="background:var(--teal)">4</div>
+      <div class="step-content">
+        <div class="step-title">Evaluate Against Requirements</div>
+        <p>Test with real users. Observe where they struggle. Fix problems. Repeat until users can accomplish their goals easily and efficiently.</p>
+      </div>
+    </div>
+  </div>
+
+  <h3 class="sub-title">User Personas — Bringing Users to Life</h3>
+  <p class="body-text">A persona is a fictional but realistic representation of a key user group. Personas help design teams make decisions by asking: "What would <em>Sarah</em> need here?"</p>
+
+  <div class="persona-grid animate-on-scroll">
+    <div class="persona-card">
+      <div class="persona-avatar" style="background:#e8f0fd">👩‍⚕️</div>
+      <div class="persona-name">Sarah, 34</div>
+      <div class="persona-role">Hospital Nurse — Primary User</div>
+      <div class="persona-row"><strong>Goals:</strong><span>Quick access to patient records during rounds</span></div>
+      <div class="persona-row"><strong>Frustrations:</strong><span>Complex navigation, too many clicks, slow load times</span></div>
+      <div class="persona-row"><strong>Tech Level:</strong><span>Moderate — uses phone and basic PC daily</span></div>
+      <div class="persona-row"><strong>Quote:</strong><span style="font-style:italic">"I just need the medicine schedule fast. No time for complex menus."</span></div>
+    </div>
+    <div class="persona-card">
+      <div class="persona-avatar" style="background:#e0f5f4">👨‍💼</div>
+      <div class="persona-name">James, 52</div>
+      <div class="persona-role">IT Administrator — Power User</div>
+      <div class="persona-row"><strong>Goals:</strong><span>Maintain uptime, manage user accounts, run compliance reports</span></div>
+      <div class="persona-row"><strong>Frustrations:</strong><span>Systems that don't integrate with existing tools</span></div>
+      <div class="persona-row"><strong>Tech Level:</strong><span>Expert — manages servers and networks daily</span></div>
+      <div class="persona-row"><strong>Quote:</strong><span style="font-style:italic">"I need admin tools that don't require a PhD to operate."</span></div>
+    </div>
+  </div>
+
+  <h2 class="section-title" data-num="2.2">Outsourcing Analysis &amp; Evaluation</h2>
+  <p class="body-text">Outsourcing means hiring external organizations to perform work that could be done internally. The fundamental decision is <strong>Build vs. Buy vs. Outsource</strong>.</p>
+
+  <table class="info-table animate-on-scroll">
+    <thead><tr><th>Option</th><th>When to Use</th><th>Key Benefit</th><th>Key Risk</th></tr></thead>
+    <tbody>
+      <tr><td>Build (In-house)</td><td>Core competitive advantage; full IP control needed</td><td>Exact fit to needs; full ownership</td><td>High cost; long timeline</td></tr>
+      <tr><td>Buy (COTS)</td><td>Standard functionality; faster deployment needed</td><td>Lower cost; faster to deploy</td><td>May not fit exactly; vendor dependency</td></tr>
+      <tr><td>Outsource</td><td>Specialized skills needed; non-core functionality</td><td>Access to expertise; cost savings</td><td>Communication; quality control</td></tr>
+      <tr><td>Hybrid</td><td>Large enterprises with diverse needs</td><td>Best of all approaches</td><td>Coordination complexity</td></tr>
+    </tbody>
+  </table>
+
+  <h3 class="sub-title">Outsourcing Analysis Framework — 5 Key Questions</h3>
+  <div class="info-box teal animate-on-scroll">
+    <div class="ib-title">🔍 Before Outsourcing — Ask These Questions</div>
+    <ul>
+      <li><strong>Core Competency Test:</strong> Is this function what makes your organization unique? If YES, keep in-house.</li>
+      <li><strong>Cost Analysis:</strong> Calculate Total Cost of Ownership (TCO) for both in-house and outsourced over 3–5 years.</li>
+      <li><strong>Risk Assessment:</strong> Evaluate vendor lock-in, data security, quality control, and communication barriers.</li>
+      <li><strong>Capability Gap:</strong> Do you lack the skills internally? Outsourcing brings expertise you don't have.</li>
+      <li><strong>Time to Market:</strong> External vendors with ready teams can often deliver 40–60% faster initially.</li>
+    </ul>
+  </div>
+
+  <h2 class="section-title" data-num="2.3">Vendor Assessment &amp; Selection</h2>
+  <table class="info-table animate-on-scroll">
+    <thead><tr><th>Evaluation Criterion</th><th>Weight</th><th>What to Assess</th></tr></thead>
+    <tbody>
+      <tr><td>Technical Capability</td><td style="color:var(--blue);font-weight:700">30%</td><td>Technology stack, architecture skills, certifications, portfolio of similar projects</td></tr>
+      <tr><td>Experience &amp; References</td><td style="color:var(--blue);font-weight:700">25%</td><td>Years in business, similar projects completed, verifiable client testimonials</td></tr>
+      <tr><td>Cost Structure</td><td style="color:var(--blue);font-weight:700">20%</td><td>Pricing model (fixed/T&M), hidden costs, payment terms, change request handling</td></tr>
+      <tr><td>Communication &amp; Culture</td><td style="color:var(--blue);font-weight:700">15%</td><td>Language, time zone, responsiveness, methodology alignment (Agile vs Waterfall)</td></tr>
+      <tr><td>Legal &amp; Compliance</td><td style="color:var(--blue);font-weight:700">10%</td><td>Data protection, IP ownership clauses, NDAs, SLA terms and penalty clauses</td></tr>
+    </tbody>
+  </table>
+
+  <h2 class="section-title" data-num="2.4">Vendor Implementation &amp; Management</h2>
+  <div class="info-box blue">
+    <div class="ib-title">🤝 Key Success Factors for Outsourced Projects</div>
+    <ul>
+      <li><strong>Clear SLA:</strong> Document response times, uptime requirements, quality standards, and penalty clauses for failure</li>
+      <li><strong>Regular Communication:</strong> Weekly status meetings, shared dashboards, open Slack/Teams channels</li>
+      <li><strong>Knowledge Transfer Plan:</strong> Your team must gain enough knowledge to support the system after vendor leaves</li>
+      <li><strong>Change Management:</strong> Formal process for scope changes to prevent scope creep and cost overruns</li>
+      <li><strong>Exit Strategy:</strong> Always plan for transitioning away from the vendor — whether at contract end or in case of failure</li>
+    </ul>
+  </div>
+
+  <div class="chapter-summary">
+    <h3>📚 Chapter 2 — Key Takeaways</h3>
+    <ul>
+      <li>User-oriented design puts end users at the center — leading to 70%+ reduction in requirements-related failures</li>
+      <li>Personas make user research tangible; UCD process (4 steps) ensures continuous user validation</li>
+      <li>Outsourcing decisions require analysis of core competency, TCO, risk, and capability gaps</li>
+      <li>Vendor selection uses weighted criteria: technical (30%), experience (25%), cost (20%), communication (15%), legal (10%)</li>
+      <li>Successful outsourcing requires SLAs, regular communication, knowledge transfer, and an exit strategy</li>
+    </ul>
+  </div>
+</div>
+
+<div class="section-sep"></div>
+
+<!-- ════════════════════════════════════════════════════════
+     CHAPTER 3
+═══════════════════════════════════════════════════════════ -->
+<div id="ch3" class="book-section">
+  <div class="chapter-header ch3">
+    <div class="ch-number">03</div>
+    <div class="ch-meta">
+      <div class="ch-label">Chapter Three</div>
+      <div class="ch-title">Software Development Approaches</div>
+      <div class="ch-subtitle">RAD · JAD · GSS · CASE Tools · Structured Methodologies · Extreme Programming</div>
+      <span class="ch-lo">📌 LO3 — Software Development Approaches in Practice</span>
+    </div>
+  </div>
+
+  <h2 class="section-title" data-num="3.1">Rapid Application Development (RAD)</h2>
+  <p class="body-text">RAD, created by James Martin in 1991, emphasizes <strong>speed and iterative development</strong> over rigid planning. Instead of designing everything upfront, RAD uses rapid prototyping and continuous user feedback to build software in 60–90 days.</p>
+
+  <div class="analogy-box">
+    <div class="ab-label">🚀 Core RAD Philosophy</div>
+    <p>Get a working prototype in front of users FAST. Let them react. Refine. Repeat. Ship.<br>Traditional Waterfall timeline: 12–18 months. RAD timeline: <strong>60–90 days</strong>.</p>
+  </div>
+
+  <h3 class="sub-title">RAD Phases</h3>
+  <div class="steps-grid animate-on-scroll">
+    <div class="step-card">
+      <div class="step-num" style="background:var(--amber)">1</div>
+      <div class="step-content">
+        <div class="step-title">Requirements Planning</div>
+        <p>Executives, managers, and users define business functions, data needs, and constraints. Focus on high-level agreement — not detailed specs. Think workshop, not formal document.</p>
+      </div>
+    </div>
+    <div class="step-card">
+      <div class="step-num" style="background:var(--amber)">2</div>
+      <div class="step-content">
+        <div class="step-title">User Design</div>
+        <p>Users and analysts collaborate intensively to build interactive models using CASE tools. Prototypes built rapidly and refined with immediate user feedback — multiple iterations happen here.</p>
+      </div>
+    </div>
+    <div class="step-card">
+      <div class="step-num" style="background:var(--amber)">3</div>
+      <div class="step-content">
+        <div class="step-title">Construction</div>
+        <p>Developers build the full system using the approved prototype as a guide. Heavy use of code reuse and component libraries. Less emphasis on "building from scratch."</p>
+      </div>
+    </div>
+    <div class="step-card">
+      <div class="step-num" style="background:var(--amber)">4</div>
+      <div class="step-content">
+        <div class="step-title">Cutover</div>
+        <p>Testing, user acceptance, data migration, and go-live. Similar to Waterfall's deployment phase but significantly compressed due to earlier validation.</p>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="section-title" data-num="3.2">Joint Application Design (JAD)</h2>
+  <p class="body-text">JAD brings all stakeholders — users, managers, developers, and facilitators — into <strong>intensive, structured workshops</strong> to define and design systems rapidly. Developed at IBM in the 1970s, JAD cuts requirements time by up to 50% compared to one-on-one interviews.</p>
+
+  <table class="info-table animate-on-scroll">
+    <thead><tr><th>JAD Role</th><th>Who</th><th>Responsibilities</th></tr></thead>
+    <tbody>
+      <tr><td>Facilitator</td><td>Neutral leader (often consultant)</td><td>Runs sessions, ensures full participation, keeps focus on objectives, resolves conflicts</td></tr>
+      <tr><td>Executive Sponsor</td><td>Senior manager</td><td>Opens sessions, provides authority, resolves high-level conflicts, communicates importance</td></tr>
+      <tr><td>Users</td><td>End users &amp; domain experts</td><td>Provide domain knowledge, validate requirements, define workflows and business rules</td></tr>
+      <tr><td>Developers</td><td>Technical team members</td><td>Assess technical feasibility, raise constraints, estimate complexity, suggest alternatives</td></tr>
+      <tr><td>Scribe</td><td>Dedicated recorder</td><td>Documents all decisions, agreements, and action items in real-time during sessions</td></tr>
+    </tbody>
+  </table>
+
+  <h2 class="section-title" data-num="3.3">Group Support Systems (GSS)</h2>
+  <p class="body-text">GSS are computer-based systems supporting group decision-making. Used in JAD sessions to collect ideas anonymously, vote on priorities, and reach consensus faster.</p>
+
+  <div class="info-box teal animate-on-scroll">
+    <div class="ib-title">🖥️ How GSS Works in a JAD Session</div>
+    <ul>
+      <li>Each participant types answers simultaneously — <strong>anonymously</strong> — preventing dominant personalities from suppressing ideas</li>
+      <li>System collects, organizes, and displays all responses to the group instantly</li>
+      <li>Group votes or ranks ideas electronically — fast, unbiased prioritization</li>
+      <li><strong>Result:</strong> More ideas, less social bias, faster consensus, automatic documentation</li>
+    </ul>
+  </div>
+
+  <h2 class="section-title" data-num="3.4">CASE Tools</h2>
+  <p class="body-text">Computer-Aided Software Engineering (CASE) tools provide automated support for software development activities — from diagramming to code generation.</p>
+
+  <table class="info-table animate-on-scroll">
+    <thead><tr><th>CASE Type</th><th>Examples</th><th>What It Does</th></tr></thead>
+    <tbody>
+      <tr><td>Upper CASE (Front-end)</td><td>IBM Rational Rose, Enterprise Architect</td><td>Analysis &amp; design tools; create UML diagrams, data models, use cases</td></tr>
+      <tr><td>Lower CASE (Back-end)</td><td>Visual Studio generators, JUnit</td><td>Code generation, testing automation; turn designs into runnable code</td></tr>
+      <tr><td>Integrated CASE (I-CASE)</td><td>IBM Engineering Lifecycle Mgmt</td><td>Full lifecycle support from planning through deployment</td></tr>
+      <tr><td>Diagramming</td><td>Lucidchart, Draw.io, Visio</td><td>Create flowcharts, ERDs, DFDs, UML diagrams</td></tr>
+      <tr><td>Version Control</td><td>Git, SVN, Mercurial</td><td>Track code changes, enable team collaboration, support branching</td></tr>
+    </tbody>
+  </table>
+
+  <h2 class="section-title" data-num="3.5">Extreme Programming (XP)</h2>
+  <p class="body-text">XP, created by Kent Beck in 1996, takes good Agile practices "to the extreme." It is designed for projects with rapidly changing requirements and emphasizes <strong>technical excellence above all</strong>.</p>
+
+  <div class="xp-grid animate-on-scroll">
+    <div class="xp-card">
+      <div class="xp-icon">👥</div>
+      <div class="xp-name">Pair Programming</div>
+      <div class="xp-desc">Two devs share one keyboard. Driver writes; Observer reviews. Switch often. Fewer bugs, better design.</div>
+    </div>
+    <div class="xp-card">
+      <div class="xp-icon">🧪</div>
+      <div class="xp-name">Test-Driven Development</div>
+      <div class="xp-desc">Write the test BEFORE the code. Code only to make tests pass. Results in thorough coverage.</div>
+    </div>
+    <div class="xp-card">
+      <div class="xp-icon">🔄</div>
+      <div class="xp-name">Continuous Integration</div>
+      <div class="xp-desc">Merge code to main branch multiple times per day. Catch integration bugs immediately.</div>
+    </div>
+    <div class="xp-card">
+      <div class="xp-icon">📦</div>
+      <div class="xp-name">Small Releases</div>
+      <div class="xp-desc">Release working software frequently in small increments rather than one big bang.</div>
+    </div>
+    <div class="xp-card">
+      <div class="xp-icon">🎯</div>
+      <div class="xp-name">Simple Design</div>
+      <div class="xp-desc">Design only what's needed now. YAGNI: "You Ain't Gonna Need It." Avoid over-engineering.</div>
+    </div>
+    <div class="xp-card">
+      <div class="xp-icon">♻️</div>
+      <div class="xp-name">Refactoring</div>
+      <div class="xp-desc">Continuously improve code structure without changing behavior. Reduce technical debt.</div>
+    </div>
+    <div class="xp-card">
+      <div class="xp-icon">🤝</div>
+      <div class="xp-name">Collective Ownership</div>
+      <div class="xp-desc">Any developer can modify any code. No silos. Everyone owns everything together.</div>
+    </div>
+    <div class="xp-card">
+      <div class="xp-icon">👤</div>
+      <div class="xp-name">On-Site Customer</div>
+      <div class="xp-desc">A real customer representative is present with the team throughout development for instant feedback.</div>
+    </div>
+    <div class="xp-card">
+      <div class="xp-icon">⏰</div>
+      <div class="xp-name">40-Hour Week</div>
+      <div class="xp-desc">No overtime. Tired developers make more mistakes. Sustainable pace is a productivity principle.</div>
+    </div>
+    <div class="xp-card">
+      <div class="xp-icon">📖</div>
+      <div class="xp-name">Coding Standards</div>
+      <div class="xp-desc">All code follows the same style and conventions so any developer can read and modify any file.</div>
+    </div>
+    <div class="xp-card">
+      <div class="xp-icon">🎮</div>
+      <div class="xp-name">Planning Game</div>
+      <div class="xp-desc">At iteration start, customers choose features from a list based on business value within the team's capacity.</div>
+    </div>
+    <div class="xp-card">
+      <div class="xp-icon">🔖</div>
+      <div class="xp-name">Metaphor</div>
+      <div class="xp-desc">Use a simple shared story/analogy to explain how the entire system works to all stakeholders.</div>
+    </div>
+  </div>
+
+  <div class="chapter-summary">
+    <h3>📚 Chapter 3 — Key Takeaways</h3>
+    <ul>
+      <li>RAD delivers working software in 60–90 days using prototyping, user workshops, and component reuse</li>
+      <li>JAD uses structured, intensive workshops with a neutral facilitator to gather requirements 50% faster than interviews</li>
+      <li>GSS enables anonymous parallel input in group sessions, reducing social bias and accelerating consensus</li>
+      <li>CASE tools automate engineering tasks from diagramming (Upper CASE) to code generation (Lower CASE)</li>
+      <li>XP's 12 practices — including pair programming, TDD, and continuous integration — ensure technical excellence</li>
+    </ul>
+  </div>
+</div>
+
+<div class="section-sep"></div>
+
+<!-- ════════════════════════════════════════════════════════
+     CHAPTER 4
+═══════════════════════════════════════════════════════════ -->
+<div id="ch4" class="book-section">
+  <div class="chapter-header ch4">
+    <div class="ch-number">04</div>
+    <div class="ch-meta">
+      <div class="ch-label">Chapter Four</div>
+      <div class="ch-title">Development Before the Fact (DBTF) Technology</div>
+      <div class="ch-subtitle">Integrated Modelling · Primitive Structures · FMaps · TMaps · Universal Primitive Operations</div>
+      <span class="ch-lo">📌 LO3 — Software Development Approaches in Practice</span>
+    </div>
+  </div>
+
+  <h2 class="section-title" data-num="4.1">What is DBTF?</h2>
+  <p class="body-text">Development Before the Fact (DBTF) is a software engineering paradigm created by <strong>Margaret Hamilton</strong> — the engineer who led NASA's Apollo software development team. The core philosophy is radical:</p>
+
+  <div class="info-box purple animate-on-scroll">
+    <div class="ib-title">🎯 The DBTF Core Principle</div>
+    <ul>
+      <li><strong>Traditional approach:</strong> Build → Test → Find bugs → Fix → Test again → (repeat endlessly)</li>
+      <li><strong>DBTF approach:</strong> Design with mathematical completeness → Build once → Errors were never introduced</li>
+      <li>DBTF builds <strong>correctness into the system from the beginning</strong>, rather than testing it out afterwards</li>
+    </ul>
+  </div>
+
+  <div class="analogy-box">
+    <div class="ab-label">🚀 The NASA Connection</div>
+    <p>Hamilton's team at MIT developed the software for NASA's Apollo Guidance Computer — the system that landed humans on the Moon in 1969. The software had to be <strong>perfect</strong>. There was no way to patch a bug when astronauts were 240,000 miles from Earth. This requirement for absolute correctness led Hamilton to develop DBTF. She was awarded the Presidential Medal of Freedom in 2016 and is credited with coining the term <em>"software engineering."</em></p>
+  </div>
+
+  <h2 class="section-title" data-num="4.2">The Integrated Modelling Environment (001 Tool Suite)</h2>
+  <p class="body-text">DBTF is implemented through the <strong>001 Tool Suite</strong> — a formal software specification environment that generates complete, error-free software from mathematical models.</p>
+
+  <table class="info-table animate-on-scroll">
+    <thead><tr><th>Component</th><th>Role</th><th>What It Does</th></tr></thead>
+    <tbody>
+      <tr><td>FMap (Function Map)</td><td>Behavior definition</td><td>Defines the control structure — HOW functions sequence and relate to each other</td></tr>
+      <tr><td>TMap (Type Map)</td><td>Data definition</td><td>Defines the types and structure of ALL data that flows between functions</td></tr>
+      <tr><td>001AXES</td><td>Code generator</td><td>Automatically generates complete, compilable code from validated FMap+TMap models</td></tr>
+      <tr><td>RAT (Analyzer)</td><td>Verifier</td><td>Checks specifications for completeness and consistency before any code is generated</td></tr>
+    </tbody>
+  </table>
+
+  <h2 class="section-title" data-num="4.3">Primitive Structures — The Building Blocks</h2>
+  <p class="body-text">DBTF defines a small set of primitive structures — fundamental patterns that ALL systems can be decomposed into. Every function or data type is either a primitive, or a combination of these:</p>
+
+  <table class="info-table animate-on-scroll">
+    <thead><tr><th>Structure</th><th>Symbol</th><th>Meaning</th><th>Real Example</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Leaf (Primitive)</strong></td><td><code style="color:var(--purple)">P</code></td><td>Cannot be decomposed further — directly implemented in code</td><td>A function that reads a card number</td></tr>
+      <tr><td><strong>Include (AND)</strong></td><td><code style="color:var(--blue)">A</code></td><td>ALL sub-functions must execute; they share the same input/output space</td><td>To process payment: validate AND debit AND receipt</td></tr>
+      <tr><td><strong>Or (OR)</strong></td><td><code style="color:var(--teal)">OR</code></td><td>EXACTLY ONE sub-function executes based on a condition</td><td>Error type: EITHER warning OR critical halt</td></tr>
+      <tr><td><strong>Input Join</strong></td><td><code style="color:var(--amber)">IJ</code></td><td>Multiple inputs must all be present before the function executes</td><td>Only process order when BOTH payment AND stock confirmed</td></tr>
+      <tr><td><strong>Output Join</strong></td><td><code style="color:var(--rose)">OJ</code></td><td>One input produces multiple outputs sent to different consumers</td><td>Order confirmed → notify customer AND update inventory</td></tr>
+    </tbody>
+  </table>
+
+  <div class="comparison-grid animate-on-scroll">
+    <div class="cmp-card" style="border-top: 3px solid var(--blue)">
+      <div class="cmp-title" style="color:var(--blue)">🔵 Include (AND) Structure</div>
+      <p style="font-size:0.85rem;margin-bottom:0.5rem">Like a recipe — ALL steps must happen:</p>
+      <ul>
+        <li>Process Payment [Include]</li>
+        <li style="list-style:none;padding-left:1rem">├── 1. Validate card details</li>
+        <li style="list-style:none;padding-left:1rem">├── 2. Check account balance</li>
+        <li style="list-style:none;padding-left:1rem">├── 3. Authorize transaction</li>
+        <li style="list-style:none;padding-left:1rem">└── 4. Update ledger</li>
+        <li><em>All 4 must happen. None skipped.</em></li>
+      </ul>
+    </div>
+    <div class="cmp-card" style="border-top: 3px solid var(--teal)">
+      <div class="cmp-title" style="color:var(--teal)">🟢 Or Structure</div>
+      <p style="font-size:0.85rem;margin-bottom:0.5rem">Like a menu — EXACTLY ONE option chosen:</p>
+      <ul>
+        <li>Handle Error [Or]</li>
+        <li style="list-style:none;padding-left:1rem">├── 1. Show warning popup</li>
+        <li style="list-style:none;padding-left:1rem">├── 2. Show critical error page</li>
+        <li style="list-style:none;padding-left:1rem">├── 3. Log silently</li>
+        <li style="list-style:none;padding-left:1rem">└── 4. Halt system</li>
+        <li><em>Only ONE executes based on error type.</em></li>
+      </ul>
+    </div>
+  </div>
+
+  <h2 class="section-title" data-num="4.4">FMaps (Function Maps)</h2>
+  <p class="body-text">An FMap is a <strong>hierarchical tree structure</strong> that defines ALL functions in a system and their control relationships. It shows WHAT the system does and in what order/structure — from system level down to individual primitive operations.</p>
+
+  <div class="info-box purple animate-on-scroll">
+    <div class="ib-title">🏧 ATM Withdraw Cash — FMap Example</div>
+    <ul style="font-family: var(--font-mono); font-size: 0.82rem; line-height: 1.9;">
+      <li>Withdraw Cash [Include — ALL must execute]</li>
+      <li style="list-style:none;padding-left:1.5rem">├── Authenticate User [Include]</li>
+      <li style="list-style:none;padding-left:3rem">├── Read Card [Primitive P]</li>
+      <li style="list-style:none;padding-left:3rem">├── Request PIN [Primitive P]</li>
+      <li style="list-style:none;padding-left:3rem">└── Validate PIN [Or]</li>
+      <li style="list-style:none;padding-left:4.5rem">├── Grant Access [Primitive P]</li>
+      <li style="list-style:none;padding-left:4.5rem">└── Deny &amp; Eject Card [Primitive P]</li>
+      <li style="list-style:none;padding-left:1.5rem">├── Select Amount [Primitive P]</li>
+      <li style="list-style:none;padding-left:1.5rem">├── Dispense Cash [Primitive P]</li>
+      <li style="list-style:none;padding-left:1.5rem">└── Update Account Balance [Primitive P]</li>
+    </ul>
+  </div>
+
+  <h2 class="section-title" data-num="4.5">TMaps (Type Maps)</h2>
+  <p class="body-text">A TMap defines the <strong>data types and their structure</strong> that flow between functions. Where FMaps define behavior, TMaps define data — they are two sides of the same specification coin. The 001 Tool verifies type compatibility at EVERY function interface automatically.</p>
+
+  <div class="info-box purple animate-on-scroll">
+    <div class="ib-title">📊 BankAccount TMap Example</div>
+    <ul style="font-family: var(--font-mono); font-size: 0.82rem; line-height: 1.9;">
+      <li>BankAccount [Include]</li>
+      <li style="list-style:none;padding-left:1.5rem">├── AccountNumber : String (exactly 10 digits)</li>
+      <li style="list-style:none;padding-left:1.5rem">├── AccountHolder : Person</li>
+      <li style="list-style:none;padding-left:3rem">├── Name : String</li>
+      <li style="list-style:none;padding-left:3rem">└── DateOfBirth : Date</li>
+      <li style="list-style:none;padding-left:1.5rem">├── Balance : Real (≥ 0.00)</li>
+      <li style="list-style:none;padding-left:1.5rem">└── AccountType [Or]</li>
+      <li style="list-style:none;padding-left:3rem">├── Savings : SavingsAccount</li>
+      <li style="list-style:none;padding-left:3rem">├── Checking : CheckingAccount</li>
+      <li style="list-style:none;padding-left:3rem">└── Investment : InvestmentAccount</li>
+    </ul>
+  </div>
+
+  <h2 class="section-title" data-num="4.6">Universal Primitive Operations (UPOs)</h2>
+  <p class="body-text">DBTF defines Universal Primitive Operations — the atomic actions that all system behavior ultimately reduces to. By limiting operations to these primitives, DBTF ensures every action is explicitly defined with no hidden side effects.</p>
+
+  <table class="info-table animate-on-scroll">
+    <thead><tr><th>UPO</th><th>Definition</th><th>Example</th></tr></thead>
+    <tbody>
+      <tr><td>Create</td><td>Bring a new object into existence</td><td>Create a new bank account record</td></tr>
+      <tr><td>Access</td><td>Read the value of an existing object</td><td>Read the current account balance</td></tr>
+      <tr><td>Modify</td><td>Change the value of an existing object</td><td>Update balance after a transaction</td></tr>
+      <tr><td>Delete</td><td>Remove an object from existence</td><td>Delete a closed account record</td></tr>
+      <tr><td>Evaluate</td><td>Perform a computation and return a result</td><td>Calculate interest on balance</td></tr>
+      <tr><td>Enable/Disable</td><td>Activate or deactivate a function</td><td>Enable overdraft protection on account</td></tr>
+    </tbody>
+  </table>
+
+  <div class="chapter-summary">
+    <h3>📚 Chapter 4 — Key Takeaways</h3>
+    <ul>
+      <li>DBTF builds correctness INTO the design (before the fact), rather than testing it out afterwards</li>
+      <li>The 001 Tool Suite implements DBTF with FMaps (behavior), TMaps (data), 001AXES (code generator), and RAT (verifier)</li>
+      <li>5 primitive structures: Leaf (P), Include (AND), Or, Input Join, Output Join — ALL systems reduce to these</li>
+      <li>FMaps define hierarchical function trees; TMaps define type-safe data structures; together they form a complete specification</li>
+      <li>6 Universal Primitive Operations: Create, Access, Modify, Delete, Evaluate, Enable/Disable — the atoms of any system</li>
+    </ul>
+  </div>
+</div>
+
+<div class="section-sep"></div>
+
+<!-- ════════════════════════════════════════════════════════
+     CHAPTER 5
+═══════════════════════════════════════════════════════════ -->
+<div id="ch5" class="book-section">
+  <div class="chapter-header ch5">
+    <div class="ch-number">05</div>
+    <div class="ch-meta">
+      <div class="ch-label">Chapter Five</div>
+      <div class="ch-title">Software Engineering Design</div>
+      <div class="ch-subtitle">Design Specification · OOD · UI Design · Re-engineering · Software Testing</div>
+      <span class="ch-lo">📌 LO3 — Software Development Approaches in Practice</span>
+    </div>
+  </div>
+
+  <h2 class="section-title" data-num="5.1">The Design Specification</h2>
+  <p class="body-text">The Software Design Document (SDD) is the <strong>blueprint of the system</strong>. It translates requirements into a technical plan developers can implement. A great SDD eliminates ambiguity and enables parallel development.</p>
+
+  <div class="info-box teal animate-on-scroll">
+    <div class="ib-title">📄 Key Sections of a Design Specification</div>
+    <ul>
+      <li><strong>System Overview:</strong> High-level description, purpose, major components and their responsibilities</li>
+      <li><strong>Architecture Design:</strong> How components are organized (layered, microservices, MVC) and how they interact</li>
+      <li><strong>Database Design:</strong> ER diagrams, table schemas, indexing strategy, normalization</li>
+      <li><strong>Interface Design:</strong> API contracts, message formats, communication protocols (REST, gRPC)</li>
+      <li><strong>UI Design:</strong> Screen layouts, navigation flows, wireframes, interaction patterns</li>
+      <li><strong>Security Design:</strong> Authentication, authorization, encryption, audit logging strategy</li>
+    </ul>
+  </div>
+
+  <h2 class="section-title" data-num="5.2">Object-Oriented Design (OOD)</h2>
+  <p class="body-text">OOD organizes software around <strong>objects</strong> — entities combining data (attributes) and behavior (methods). OOD mirrors the real world: a <code>Car</code> object has <em>color</em> and <em>speed</em> (data) and can <em>accelerate()</em> and <em>brake()</em> (methods).</p>
+
+  <h3 class="sub-title">The 4 Pillars of OOP</h3>
+  <div class="metrics-row animate-on-scroll" style="flex-wrap:wrap">
+    <div class="metric-card" style="background:linear-gradient(135deg,#1a4fa8,#0f2244)">
+      <span class="m-value" style="font-size:1.5rem">Encapsulation</span>
+      <span class="m-label">Bundle + Hide</span>
+      <p class="m-desc">Bundle data &amp; methods together; hide internal details. BankAccount hides balance; expose only deposit() and withdraw().</p>
+    </div>
+    <div class="metric-card" style="background:linear-gradient(135deg,#0e7c7b,#055a5a)">
+      <span class="m-value" style="font-size:1.5rem">Inheritance</span>
+      <span class="m-label">IS-A Relationship</span>
+      <p class="m-desc">Child classes inherit from parent. SavingsAccount IS-A BankAccount. Reuse code; extend behaviour.</p>
+    </div>
+    <div class="metric-card" style="background:linear-gradient(135deg,#d4800a,#8b5503)">
+      <span class="m-value" style="font-size:1.5rem">Polymorphism</span>
+      <span class="m-label">Many Forms</span>
+      <p class="m-desc">Same interface, different behaviour. draw() on Circle, Square, Triangle each draw differently — same call, different result.</p>
+    </div>
+    <div class="metric-card" style="background:linear-gradient(135deg,#6c3483,#4a235a)">
+      <span class="m-value" style="font-size:1.5rem">Abstraction</span>
+      <span class="m-label">Essential Features</span>
+      <p class="m-desc">Show only what matters; hide complexity. You drive a car without knowing how the combustion engine works.</p>
+    </div>
+  </div>
+
+  <h3 class="sub-title">SOLID Principles</h3>
+  <table class="info-table animate-on-scroll">
+    <thead><tr><th>Letter</th><th>Principle</th><th>Meaning in Plain English</th></tr></thead>
+    <tbody>
+      <tr><td><strong style="color:var(--blue)">S</strong></td><td>Single Responsibility</td><td>Each class should have exactly ONE reason to change. Don't mix data access with business logic.</td></tr>
+      <tr><td><strong style="color:var(--teal)">O</strong></td><td>Open/Closed</td><td>Open for extension; closed for modification. Add features by extending, not editing existing code.</td></tr>
+      <tr><td><strong style="color:var(--amber)">L</strong></td><td>Liskov Substitution</td><td>Subclasses must be substitutable for parent class without breaking behaviour.</td></tr>
+      <tr><td><strong style="color:var(--rose)">I</strong></td><td>Interface Segregation</td><td>Many small, specific interfaces are better than one large, generic interface.</td></tr>
+      <tr><td><strong style="color:var(--purple)">D</strong></td><td>Dependency Inversion</td><td>Depend on abstractions (interfaces), not concrete implementations. Use dependency injection.</td></tr>
+    </tbody>
+  </table>
+
+  <h2 class="section-title" data-num="5.3">User Interface Design</h2>
+  <p class="body-text">A well-designed UI is <strong>invisible</strong> — users accomplish goals without thinking about the interface. Nielsen's 10 Heuristics are the gold standard for evaluating usability.</p>
+
+  <table class="info-table animate-on-scroll">
+    <thead><tr><th>#</th><th>Heuristic</th><th>Meaning &amp; Example</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>Visibility of System Status</td><td>Always tell users what's happening — loading spinners, progress bars, confirmation messages</td></tr>
+      <tr><td>2</td><td>Match the Real World</td><td>Use words and icons familiar to users, not technical jargon. Use a trash can icon for delete.</td></tr>
+      <tr><td>3</td><td>User Control &amp; Freedom</td><td>Provide Undo, Redo, and clear "cancel" paths. Users make mistakes constantly.</td></tr>
+      <tr><td>4</td><td>Consistency &amp; Standards</td><td>Follow platform conventions. "Save" should always look and behave the same way throughout the app.</td></tr>
+      <tr><td>5</td><td>Error Prevention</td><td>Design to prevent problems. Disable a "Submit" button until required fields are filled.</td></tr>
+      <tr><td>6</td><td>Recognition over Recall</td><td>Make options visible. Don't force users to remember information from a previous screen.</td></tr>
+      <tr><td>7</td><td>Flexibility &amp; Efficiency</td><td>Allow experts to use keyboard shortcuts that don't slow novices.</td></tr>
+      <tr><td>8</td><td>Aesthetic &amp; Minimal Design</td><td>Remove irrelevant information. Every element on screen must serve a purpose.</td></tr>
+      <tr><td>9</td><td>Help Users Recover from Errors</td><td>Error messages must be in plain language, describe the problem, and suggest a solution.</td></tr>
+      <tr><td>10</td><td>Help &amp; Documentation</td><td>Even great interfaces may need help. Make it easy to search and find task-oriented help.</td></tr>
+    </tbody>
+  </table>
+
+  <h2 class="section-title" data-num="5.4">Software Re-Engineering</h2>
+  <p class="body-text">Re-engineering analyzes and rebuilds existing software to improve quality, maintainability, or performance — without necessarily changing its external functionality.</p>
+
+  <div class="steps-grid animate-on-scroll">
+    <div class="step-card">
+      <div class="step-num" style="background:var(--sage)">1</div>
+      <div class="step-content">
+        <div class="step-title">Reverse Engineering</div>
+        <p>Analyze existing code to extract its design. Understand what it does and how, without the benefit of documentation (which often doesn't exist for legacy systems).</p>
+      </div>
+    </div>
+    <div class="step-card">
+      <div class="step-num" style="background:var(--sage)">2</div>
+      <div class="step-content">
+        <div class="step-title">Restructuring / Refactoring</div>
+        <p>Reorganize and clean up code to improve internal structure without changing external behavior. Eliminate duplication, simplify logic, improve naming.</p>
+      </div>
+    </div>
+    <div class="step-card">
+      <div class="step-num" style="background:var(--sage)">3</div>
+      <div class="step-content">
+        <div class="step-title">Forward Engineering</div>
+        <p>Build the new, improved system using recovered design information plus enhancements. May involve new technology, framework migration, or full rewrite.</p>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="section-title" data-num="5.5">Software Testing</h2>
+  <p class="body-text">Testing verifies software meets requirements and finds defects. Remember: <em>Testing can prove the presence of bugs, but cannot prove their absence.</em></p>
+
+  <table class="info-table animate-on-scroll">
+    <thead><tr><th>Testing Level</th><th>Who</th><th>What Is Tested</th><th>Tool Examples</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Unit Testing</strong></td><td>Developers</td><td>Individual functions/methods in isolation — the smallest testable unit</td><td>JUnit, pytest, NUnit</td></tr>
+      <tr><td><strong>Integration Testing</strong></td><td>Developers/QA</td><td>How units work together — interfaces, data flows, module interactions</td><td>Postman, Selenium</td></tr>
+      <tr><td><strong>System Testing</strong></td><td>QA team</td><td>Complete integrated system against specified requirements</td><td>JMeter, LoadRunner</td></tr>
+      <tr><td><strong>Acceptance (UAT)</strong></td><td>End users</td><td>Real-world scenarios to confirm system meets business needs before go-live</td><td>Manual, Cucumber</td></tr>
+    </tbody>
+  </table>
+
+  <div class="chapter-summary">
+    <h3>📚 Chapter 5 — Key Takeaways</h3>
+    <ul>
+      <li>The SDD (Software Design Document) is the technical blueprint translating requirements into implementable plans</li>
+      <li>4 OOP pillars: Encapsulation (bundle+hide), Inheritance (IS-A), Polymorphism (many forms), Abstraction (essential features)</li>
+      <li>SOLID principles guide maintainable OO design: Single Responsibility, Open/Closed, Liskov, Interface Segregation, Dependency Inversion</li>
+      <li>Nielsen's 10 Heuristics are the standard for evaluating UI usability — visibility, consistency, error prevention, etc.</li>
+      <li>4 Testing levels: Unit → Integration → System → Acceptance (UAT), using both black-box and white-box techniques</li>
+    </ul>
+  </div>
+</div>
+
+<div class="section-sep"></div>
+
+<!-- ════════════════════════════════════════════════════════
+     CHAPTER 6
+═══════════════════════════════════════════════════════════ -->
+<div id="ch6" class="book-section">
+  <div class="chapter-header ch6">
+    <div class="ch-number">06</div>
+    <div class="ch-meta">
+      <div class="ch-label">Chapter Six</div>
+      <div class="ch-title">EDP Auditing</div>
+      <div class="ch-subtitle">Systematic Auditing · Security · Quality · Ergonomics · Customer Service · Legality</div>
+      <span class="ch-lo">📌 LO4 — Auditing in Software Design &amp; Management</span>
+    </div>
+  </div>
+
+  <h2 class="section-title" data-num="6.1">What is EDP Auditing?</h2>
+  <p class="body-text">Electronic Data Processing (EDP) Auditing — now called IT Auditing — is the examination and evaluation of an organization's information systems, infrastructure, and management to ensure they are <strong>effective, secure, and legally compliant</strong>.</p>
+
+  <div class="analogy-box">
+    <div class="ab-label">🏢 Building Inspection Analogy</div>
+    <p>An EDP audit is like a building safety inspection. The inspector checks: Are all systems functioning? Is the building (system) safe for occupants (users)? Does it meet building codes (regulations)? The auditor reports findings to management — who must fix any violations found.</p>
+  </div>
+
+  <h2 class="section-title" data-num="6.2">The Audit Process — 6 Phases</h2>
+  <div class="steps-grid animate-on-scroll">
+    <div class="step-card">
+      <div class="step-num" style="background:var(--rose)">1</div>
+      <div class="step-content"><div class="step-title">Audit Planning</div><p>Define scope, objectives, and methodology. Identify key systems, risks, and controls to evaluate. Set timeline and team assignments.</p></div>
+    </div>
+    <div class="step-card">
+      <div class="step-num" style="background:var(--rose)">2</div>
+      <div class="step-content"><div class="step-title">Preliminary Review</div><p>Gather background: system documentation, previous audit reports, organizational charts, risk assessments.</p></div>
+    </div>
+    <div class="step-card">
+      <div class="step-num" style="background:var(--rose)">3</div>
+      <div class="step-content"><div class="step-title">Audit Fieldwork</div><p>Execute the plan: test controls, review evidence, observe operations, interview staff, sample transactions.</p></div>
+    </div>
+    <div class="step-card">
+      <div class="step-num" style="background:var(--rose)">4</div>
+      <div class="step-content"><div class="step-title">Evidence Evaluation</div><p>Analyze findings against audit criteria. Assess adequacy of controls. Identify deficiencies and root causes.</p></div>
+    </div>
+    <div class="step-card">
+      <div class="step-num" style="background:var(--rose)">5</div>
+      <div class="step-content"><div class="step-title">Reporting</div><p>Document findings, recommendations, and management responses in a formal audit report. Present to leadership.</p></div>
+    </div>
+    <div class="step-card">
+      <div class="step-num" style="background:var(--rose)">6</div>
+      <div class="step-content"><div class="step-title">Follow-Up</div><p>Verify that management has implemented agreed corrective actions from the previous audit before closing findings.</p></div>
+    </div>
+  </div>
+
+  <h2 class="section-title" data-num="6.3">COBIT Framework</h2>
+  <p class="body-text">COBIT (Control Objectives for Information and Related Technologies) is the most widely used framework for IT governance and auditing, developed by ISACA.</p>
+
+  <table class="info-table animate-on-scroll">
+    <thead><tr><th>COBIT Domain</th><th>Focus</th><th>Key Processes</th></tr></thead>
+    <tbody>
+      <tr><td>Plan &amp; Organise (PO)</td><td>Strategic alignment</td><td>IT strategy, risk management, quality management, HR planning</td></tr>
+      <tr><td>Acquire &amp; Implement (AI)</td><td>Solution delivery</td><td>Software acquisition, change management, installation procedures</td></tr>
+      <tr><td>Deliver &amp; Support (DS)</td><td>Operations</td><td>Service desk, performance mgmt, security, continuity, data management</td></tr>
+      <tr><td>Monitor &amp; Evaluate (ME)</td><td>Oversight</td><td>Performance monitoring, internal control, regulatory compliance</td></tr>
+    </tbody>
+  </table>
+
+  <h2 class="section-title" data-num="6.4">Security — The CIA Triad</h2>
+  <p class="body-text">The CIA Triad is the foundational framework for all information security decisions. Every security control exists to protect at least one of these three properties:</p>
+
+  <div class="cia-grid animate-on-scroll">
+    <div class="cia-card c">
+      <div class="cia-letter">C</div>
+      <div class="cia-word">Confidentiality</div>
+      <div class="cia-desc">Only authorized users can access sensitive data.<br><br>Tools: Encryption (AES-256), access controls (RBAC), authentication (MFA), data masking</div>
+    </div>
+    <div class="cia-card i">
+      <div class="cia-letter">I</div>
+      <div class="cia-word">Integrity</div>
+      <div class="cia-desc">Data is accurate and has not been tampered with.<br><br>Tools: Checksums (SHA-256), hashing, digital signatures, version control, audit logs</div>
+    </div>
+    <div class="cia-card a">
+      <div class="cia-letter">A</div>
+      <div class="cia-word">Availability</div>
+      <div class="cia-desc">Systems are accessible when users need them.<br><br>Tools: Redundancy, load balancing, backups, DDoS protection, failover systems</div>
+    </div>
+  </div>
+
+  <h2 class="section-title" data-num="6.5">Ergonomics</h2>
+  <p class="body-text">Ergonomics examines whether IT environments support healthy, efficient, and comfortable use of information systems.</p>
+
+  <div class="comparison-grid animate-on-scroll">
+    <div class="cmp-card" style="border-top:3px solid var(--blue)">
+      <div class="cmp-title" style="color:var(--blue)">🖥️ Physical Ergonomics</div>
+      <ul>
+        <li>Monitor at eye level, 50–70 cm from eyes</li>
+        <li>Wrist in neutral position — no awkward bending</li>
+        <li>Adjustable chair with lumbar support</li>
+        <li>Feet flat on floor or footrest</li>
+        <li>300–500 lux indirect lighting; no screen glare</li>
+      </ul>
+    </div>
+    <div class="cmp-card" style="border-top:3px solid var(--teal)">
+      <div class="cmp-title" style="color:var(--teal)">🧠 Cognitive Ergonomics (Software)</div>
+      <ul>
+        <li>Don't overwhelm users with information overload</li>
+        <li>Response &lt;0.1s: feels instant; &lt;1s: acceptable; &gt;10s: needs progress bar</li>
+        <li>Error messages in plain language — never "Error 0x00000FF"</li>
+        <li>Progressive disclosure: show what's needed now</li>
+        <li>Consistent interface patterns reduce cognitive load</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2 class="section-title" data-num="6.6">Legality &amp; Compliance</h2>
+  <table class="info-table animate-on-scroll">
+    <thead><tr><th>Law / Standard</th><th>Scope</th><th>What It Requires</th></tr></thead>
+    <tbody>
+      <tr><td>GDPR (Europe)</td><td>Personal data of EU residents</td><td>Consent, data minimization, right to erasure, breach notification within 72 hours</td></tr>
+      <tr><td>PCI DSS</td><td>Payment card industry</td><td>Secure cardholder data, encrypt transmissions, access controls, regular audits</td></tr>
+      <tr><td>HIPAA (USA)</td><td>Healthcare data</td><td>Protect patient health information, access controls, audit trails, breach notification</td></tr>
+      <tr><td>SOX (USA)</td><td>Publicly traded companies</td><td>Financial reporting IT controls, audit trails for all financial transactions</td></tr>
+      <tr><td>ISO 27001</td><td>Information security (global)</td><td>Information Security Management System (ISMS), risk assessment, controls</td></tr>
+    </tbody>
+  </table>
+
+  <div class="chapter-summary">
+    <h3>📚 Chapter 6 — Key Takeaways</h3>
+    <ul>
+      <li>EDP auditing evaluates IT systems for effectiveness, security, and legal compliance — like a health inspection for software</li>
+      <li>6-phase audit process: Planning → Preliminary Review → Fieldwork → Evaluation → Reporting → Follow-Up</li>
+      <li>COBIT provides the standard 4-domain framework: Plan &amp; Organise, Acquire &amp; Implement, Deliver &amp; Support, Monitor &amp; Evaluate</li>
+      <li>CIA Triad: Confidentiality (encryption/access), Integrity (hashing/signatures), Availability (redundancy/backups)</li>
+      <li>Legal compliance includes GDPR, PCI DSS, HIPAA, SOX — non-compliance leads to heavy fines and reputational damage</li>
+    </ul>
+  </div>
+</div>
+
+<div class="section-sep"></div>
+
+<!-- ════════════════════════════════════════════════════════
+     CHAPTER 7
+═══════════════════════════════════════════════════════════ -->
+<div id="ch7" class="book-section">
+  <div class="chapter-header ch7">
+    <div class="ch-number">07</div>
+    <div class="ch-meta">
+      <div class="ch-label">Chapter Seven</div>
+      <div class="ch-title">Management of Software Maintenance</div>
+      <div class="ch-subtitle">Maintenance Process · Types · Cost Modelling · Lehman's Laws · Personnel Management</div>
+      <span class="ch-lo">📌 LO4 — Auditing &amp; Software Management</span>
+    </div>
+  </div>
+
+  <h2 class="section-title" data-num="7.1">What is Software Maintenance?</h2>
+  <p class="body-text">Software maintenance is <strong>ALL work done on software AFTER delivery</strong>. It is NOT just fixing bugs — it encompasses enhancements, adaptations, and preventive work that keeps software useful throughout its operational life.</p>
+
+  <div class="metrics-row animate-on-scroll">
+    <div class="metric-card">
+      <span class="m-value">60–80%</span>
+      <span class="m-label">of lifecycle cost</span>
+      <p class="m-desc">Maintenance consumes more budget than initial development</p>
+    </div>
+    <div class="metric-card">
+      <span class="m-value">3–4×</span>
+      <span class="m-label">original build cost</span>
+      <p class="m-desc">A $1M system typically costs $3–4M over its lifetime in maintenance</p>
+    </div>
+    <div class="metric-card">
+      <span class="m-value">10+ yrs</span>
+      <span class="m-label">typical system life</span>
+      <p class="m-desc">Well-maintained systems often outlast their original design expectations</p>
+    </div>
+  </div>
+
+  <h2 class="section-title" data-num="7.2">Types of Software Maintenance</h2>
+  <p class="body-text">IEEE Standard 1219 defines four categories. Understanding the distribution helps prioritize maintenance budgets:</p>
+
+  <div class="maint-bars animate-on-scroll">
+    <div class="maint-bar-row">
+      <div class="maint-bar-label">⭐ Perfective</div>
+      <div class="maint-bar-track"><div class="maint-bar-fill" style="width:60%;background:linear-gradient(90deg,var(--blue),#2563eb)"><span>60%</span></div></div>
+      <div class="maint-pct" style="color:var(--blue)">60%</div>
+    </div>
+    <div class="maint-bar-row">
+      <div class="maint-bar-label">🔄 Adaptive</div>
+      <div class="maint-bar-track"><div class="maint-bar-fill" style="width:18%;background:linear-gradient(90deg,var(--teal),#0d9488)"><span>18%</span></div></div>
+      <div class="maint-pct" style="color:var(--teal)">18%</div>
+    </div>
+    <div class="maint-bar-row">
+      <div class="maint-bar-label">🔧 Corrective</div>
+      <div class="maint-bar-track"><div class="maint-bar-fill" style="width:17%;background:linear-gradient(90deg,var(--amber),#d97706)"><span>17%</span></div></div>
+      <div class="maint-pct" style="color:var(--amber)">17%</div>
+    </div>
+    <div class="maint-bar-row">
+      <div class="maint-bar-label">🛡️ Preventive</div>
+      <div class="maint-bar-track"><div class="maint-bar-fill" style="width:5%;background:linear-gradient(90deg,var(--purple),#7c3aed)"><span>5%</span></div></div>
+      <div class="maint-pct" style="color:var(--purple)">5%</div>
+    </div>
+  </div>
+
+  <table class="info-table animate-on-scroll">
+    <thead><tr><th>Type</th><th>Definition</th><th>Example</th></tr></thead>
+    <tbody>
+      <tr><td>⭐ Perfective (60%)</td><td>Improve performance or add new features requested by users</td><td>Add dark mode; improve search speed by 40%; add export to PDF</td></tr>
+      <tr><td>🔄 Adaptive (18%)</td><td>Modify software to work in a changed technical environment</td><td>Update app for iOS 17; migrate from on-premise to cloud AWS</td></tr>
+      <tr><td>🔧 Corrective (17%)</td><td>Fix faults and bugs discovered during operation</td><td>Fix crash when user enters invalid date; fix payment calculation error</td></tr>
+      <tr><td>🛡️ Preventive (5%)</td><td>Restructure or update code to prevent future problems</td><td>Refactor messy module; update deprecated security libraries; add tests</td></tr>
+    </tbody>
+  </table>
+
+  <h2 class="section-title" data-num="7.3">Maintenance Process</h2>
+  <div class="steps-grid animate-on-scroll">
+    <div class="step-card"><div class="step-num" style="background:var(--gold)">1</div><div class="step-content"><div class="step-title">Problem / Change Request Identification</div><p>User or system reports an issue. Recorded in a change management system (JIRA, ServiceNow). Assigned a unique ID and priority level.</p></div></div>
+    <div class="step-card"><div class="step-num" style="background:var(--gold)">2</div><div class="step-content"><div class="step-title">Analysis &amp; Classification</div><p>Assess severity, priority, and type. Estimate impact on other modules. Classify as corrective, adaptive, perfective, or preventive.</p></div></div>
+    <div class="step-card"><div class="step-num" style="background:var(--gold)">3</div><div class="step-content"><div class="step-title">Design the Change</div><p>Plan implementation approach. Update design docs. Identify ALL affected modules using impact analysis to avoid unintended breakage.</p></div></div>
+    <div class="step-card"><div class="step-num" style="background:var(--gold)">4</div><div class="step-content"><div class="step-title">Implementation</div><p>Code the change following existing standards. Write unit tests before modifying code (TDD approach). Maintain original code style.</p></div></div>
+    <div class="step-card"><div class="step-num" style="background:var(--gold)">5</div><div class="step-content"><div class="step-title">Testing</div><p>Unit test the change. Run full regression test suite to verify nothing else broke. Conduct integration testing across affected modules.</p></div></div>
+    <div class="step-card"><div class="step-num" style="background:var(--gold)">6</div><div class="step-content"><div class="step-title">Release &amp; Documentation</div><p>Deploy to production via controlled release pipeline. Update user documentation, technical docs, and release notes. Close the change ticket.</p></div></div>
+  </div>
+
+  <h2 class="section-title" data-num="7.4">Maintenance Cost Modelling</h2>
+  <div class="formula-box animate-on-scroll">
+    <div class="formula-eq">Annual Maintenance Cost = Development Cost × Maintenance Factor
+
+Where Maintenance Factor = 0.05 to 0.15 (5–15% per year)
+
+Example: System built for $500,000:
+  Conservative (5%): $500,000 × 0.05 = $25,000 / year
+  Typical    (10%): $500,000 × 0.10 = $50,000 / year
+  Complex   (15%): $500,000 × 0.15 = $75,000 / year</div>
+    <div class="formula-where">
+      <p><span>Lehman's Law II</span> — Software complexity increases over time unless active effort is made to reduce it. This means maintenance costs tend to INCREASE over a system's life.</p>
+    </div>
+  </div>
+
+  <h2 class="section-title" data-num="7.5">Lehman's Laws of Software Evolution</h2>
+  <p class="body-text">M.M. Lehman's empirical observations about how large software systems change over decades:</p>
+
+  <div class="lehman-grid animate-on-scroll">
+    <div class="lehman-num">I</div><div class="lehman-content"><strong>Continuing Change</strong><p>A system must be continually adapted or it becomes progressively less useful over time.</p></div>
+    <div class="lehman-num">II</div><div class="lehman-content"><strong>Increasing Complexity</strong><p>As a system evolves, its complexity increases unless work is done to maintain or reduce it.</p></div>
+    <div class="lehman-num">III</div><div class="lehman-content"><strong>Large Program Evolution</strong><p>Program evolution is a self-regulating process with statistically determinable trends.</p></div>
+    <div class="lehman-num">IV</div><div class="lehman-content"><strong>Invariant Work Rate</strong><p>Development and maintenance teams work at a statistically invariant average rate over time.</p></div>
+    <div class="lehman-num">V</div><div class="lehman-content"><strong>Conservation of Familiarity</strong><p>The amount of incremental change in each release is statistically invariant across releases.</p></div>
+    <div class="lehman-num">VI</div><div class="lehman-content"><strong>Continuing Growth</strong><p>Functional content must be continually increased to maintain user satisfaction over time.</p></div>
+    <div class="lehman-num">VII</div><div class="lehman-content"><strong>Declining Quality</strong><p>Quality declines unless rigorously maintained and adapted to changes in the operational environment.</p></div>
+    <div class="lehman-num">VIII</div><div class="lehman-content"><strong>Feedback System</strong><p>Evolution processes are multi-level, multi-loop, multi-agent feedback systems that must be treated as such.</p></div>
+  </div>
+
+  <h2 class="section-title" data-num="7.6">Managing Maintenance Personnel</h2>
+  <table class="info-table animate-on-scroll">
+    <thead><tr><th>Challenge</th><th>Strategy</th></tr></thead>
+    <tbody>
+      <tr><td>Knowledge Retention</td><td>Document everything; use pair maintenance; cross-train team members on all major systems</td></tr>
+      <tr><td>Motivation</td><td>Recognize maintenance as critical, skilled work. Rotate developers through maintenance to build empathy.</td></tr>
+      <tr><td>Workload Management</td><td>Use prioritized backlog; protect maintenance staff from constant interruptions with scheduled maintenance windows</td></tr>
+      <tr><td>Skill Development</td><td>Maintenance engineers need deep system knowledge PLUS current technology skills — budget for both</td></tr>
+      <tr><td>Succession Planning</td><td>Identify key personnel whose departure would be catastrophic. Maintain documented knowledge transfer plans.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="chapter-summary">
+    <h3>📚 Chapter 7 — Key Takeaways</h3>
+    <ul>
+      <li>Maintenance consumes 60–80% of total lifecycle cost — more than initial development</li>
+      <li>4 types: Perfective (60% — new features), Adaptive (18% — environment changes), Corrective (17% — bug fixes), Preventive (5% — refactoring)</li>
+      <li>Structured maintenance process: Identification → Analysis → Design → Implementation → Testing → Release</li>
+      <li>Lehman's 8 Laws: systems grow in complexity; quality declines without active effort; change is constant</li>
+      <li>Personnel management requires knowledge retention, motivation, workload control, skill development, and succession planning</li>
+    </ul>
+  </div>
+</div>
+
+<div class="section-sep"></div>
+
+<!-- ════════════════════════════════════════════════════════
+     CHAPTER 8
+═══════════════════════════════════════════════════════════ -->
+<div id="ch8" class="book-section">
+  <div class="chapter-header ch8">
+    <div class="ch-number">08</div>
+    <div class="ch-meta">
+      <div class="ch-label">Chapter Eight</div>
+      <div class="ch-title">Cost Estimation in Software Engineering</div>
+      <div class="ch-subtitle">Function Point Analysis · Putnam Model · COCOMO II · Best Practices</div>
+      <span class="ch-lo">📌 LO4 — Auditing &amp; Software Management</span>
+    </div>
+  </div>
+
+  <h2 class="section-title" data-num="8.1">Why Cost Estimation Matters</h2>
+  <p class="body-text">Software cost estimation predicts the realistic effort, time, and money needed to build or maintain software. Poor estimation is the #1 cause of project failures.</p>
+
+  <div class="metrics-row animate-on-scroll">
+    <div class="metric-card"><span class="m-value">30%</span><span class="m-label">of projects cancelled</span><p class="m-desc">Standish CHAOS Report — cancelled before completion</p></div>
+    <div class="metric-card"><span class="m-value">189%</span><span class="m-label">avg overrun</span><p class="m-desc">52% of projects cost 189% of their original estimates</p></div>
+    <div class="metric-card"><span class="m-value">18%</span><span class="m-label">delivered on time</span><p class="m-desc">Only 18% of projects delivered on time and on budget</p></div>
+  </div>
+
+  <div class="analogy-box">
+    <div class="ab-label">📉 The Cone of Uncertainty</div>
+    <p>During the requirements phase, estimates can be off by ±400%. This range narrows as more is known — at architecture: ±50%; at detailed design: ±25%; near completion: ±10%. <strong>The key insight:</strong> never over-commit early. Re-estimate at every major milestone as uncertainty reduces.</p>
+  </div>
+
+  <h2 class="section-title" data-num="8.2">Function Point Analysis (FPA)</h2>
+  <p class="body-text">FPA measures software size from the <strong>user's perspective</strong> — how much functionality does the software provide, regardless of implementation language or technology.</p>
+
+  <h3 class="sub-title">5 Information Domain Components</h3>
+  <table class="info-table animate-on-scroll">
+    <thead><tr><th>Component</th><th>Abbrev</th><th>What It Counts</th><th>Weights (Simple/Avg/Complex)</th></tr></thead>
+    <tbody>
+      <tr><td>External Inputs</td><td><code>EI</code></td><td>Unique user inputs that add, change, or delete data (forms, screens)</td><td>3 / 4 / 6</td></tr>
+      <tr><td>External Outputs</td><td><code>EO</code></td><td>Reports, screens, outputs the system generates for users</td><td>4 / 5 / 7</td></tr>
+      <tr><td>External Inquiries</td><td><code>EQ</code></td><td>Input-output pairs: user queries that retrieve data immediately</td><td>3 / 4 / 6</td></tr>
+      <tr><td>Internal Logical Files</td><td><code>ILF</code></td><td>Groups of user data maintained BY the application</td><td>7 / 10 / 15</td></tr>
+      <tr><td>External Interface Files</td><td><code>EIF</code></td><td>Data referenced but maintained by ANOTHER system</td><td>5 / 7 / 10</td></tr>
+    </tbody>
+  </table>
+
+  <h3 class="sub-title">Worked Example: Online Library System</h3>
+  <div class="formula-box animate-on-scroll">
+    <div class="formula-eq">Step 1 — Count Components:
+  EI:  3 Simple + 1 Average  → (3×3) + (1×4) = 13
+  EO:  2 Average + 1 Complex → (2×5) + (1×7) = 17
+  EQ:  2 Average             → (2×4)          =  8
+  ILF: 1 Simple + 1 Average  → (1×7) + (1×10) = 17
+  EIF: 1 Simple              → (1×5)           =  5
+                                              ──────
+  Unadjusted Function Points (UFP)             = 60
+
+Step 2 — Apply Value Adjustment Factor (VAF):
+  AFP = UFP × (0.65 + 0.01 × ΣGSCs)
+  Where GSCs = 14 General System Characteristics, each rated 0–5
+
+Step 3 — Convert to Effort:
+  Effort = AFP ÷ Productivity Rate
+  (Java: 8–12 FP/day | COBOL: 3–5 FP/day | 4GL: 20–30 FP/day)</div>
+  </div>
+
+  <h2 class="section-title" data-num="8.3">The Putnam Model (SLIM)</h2>
+  <p class="body-text">Developed by Lawrence Putnam in 1978 from analysis of hundreds of real projects. Uses the <strong>Rayleigh curve</strong> to model how effort distributes across a project's life.</p>
+
+  <div class="formula-box animate-on-scroll">
+    <div class="formula-eq">Putnam's Fundamental Equation:
+
+  Size = C_k × Effort^(1/3) × Time^(4/3)
+
+Rearranged to solve for Effort:
+
+  Effort = (Size / C_k)³ / Time⁴</div>
+    <div class="formula-where">
+      <p><span>C_k</span> = Technology constant (productivity of the environment)</p>
+      <p><span>C_k = 2</span>  → Poor environment, weak process</p>
+      <p><span>C_k = 8</span>  → Good environment, good tools</p>
+      <p><span>C_k = 11</span> → Excellent environment, experienced team</p>
+      <p style="margin-top:0.8rem;color:#fca5a5">⚠️ KEY INSIGHT: If you HALVE the schedule (Time/2), Effort increases by a factor of ~5.7! This is why compressing schedules always costs more.</p>
+    </div>
+  </div>
+
+  <div class="analogy-box">
+    <div class="ab-label">📈 Brooks' Law Connection</div>
+    <p>Putnam's model explains Brooks' Law mathematically: <strong>"Adding manpower to a late software project makes it later."</strong> Staffing follows a Rayleigh curve — peak effort is around 40% through the project. Adding people after the peak cannot change the curve enough to recover the schedule, but DOES massively increase coordination overhead and cost.</p>
+  </div>
+
+  <h2 class="section-title" data-num="8.4">COCOMO II Model</h2>
+  <p class="body-text">COCOMO II (Constructive Cost Model II) by Barry Boehm at USC is the most researched algorithmic estimation model. It provides three sub-models for different project phases:</p>
+
+  <table class="info-table animate-on-scroll">
+    <thead><tr><th>Sub-Model</th><th>When Used</th><th>Size Measure</th><th>Accuracy</th></tr></thead>
+    <tbody>
+      <tr><td>Application Composition</td><td>Early prototyping with 4GL/GUI tools</td><td>Object Points</td><td>Order of magnitude</td></tr>
+      <tr><td>Early Design</td><td>Architecture phase; limited design detail</td><td>Unadjusted Function Points</td><td>±50%</td></tr>
+      <tr><td>Post-Architecture ⭐</td><td>After detailed design — MOST ACCURATE</td><td>KSLOC (thousands of SLOC)</td><td>±20%</td></tr>
+    </tbody>
+  </table>
+
+  <div class="formula-box animate-on-scroll">
+    <div class="formula-eq">COCOMO II Post-Architecture — Core Formula:
+
+  Effort (person-months) = 2.94 × Size^E × ΠEM_i
+
+  Schedule (months)      = 3.67 × Effort^(0.28 + 0.2×(E−0.91))
+
+  Staff (avg team size)  = Effort ÷ Schedule</div>
+    <div class="formula-where">
+      <p><span>2.94</span> = Empirically calibrated constant</p>
+      <p><span>Size</span> = Software size in KSLOC (thousands of source lines of code)</p>
+      <p><span>E</span>    = Exponent derived from 5 Scale Factors: E = 0.91 + 0.01 × ΣSF</p>
+      <p><span>EM_i</span> = 17 Effort Multipliers (product of all; each near 1.0 at Nominal rating)</p>
+    </div>
+  </div>
+
+  <h3 class="sub-title">5 Scale Factors — Affecting Exponent E</h3>
+  <table class="info-table animate-on-scroll">
+    <thead><tr><th>Scale Factor</th><th>Abbrev</th><th>Low Rating → More Effort Because...</th></tr></thead>
+    <tbody>
+      <tr><td>Precedentedness</td><td>PREC</td><td>Team hasn't built this kind of system before — more unknowns and surprises</td></tr>
+      <tr><td>Development Flexibility</td><td>FLEX</td><td>Rigid requirements leave no room to find efficient solutions</td></tr>
+      <tr><td>Risk Resolution</td><td>RESL</td><td>Architecture not well understood — more exploration and rework needed</td></tr>
+      <tr><td>Team Cohesion</td><td>TEAM</td><td>Poor team dynamics create communication overhead and conflicts</td></tr>
+      <tr><td>Process Maturity</td><td>PMAT</td><td>Low CMMI level means more rework, inconsistent practices, inefficiency</td></tr>
+    </tbody>
+  </table>
+
+  <h3 class="sub-title">17 Effort Multipliers (EM) — Key Examples</h3>
+
+  <div class="cocomo-em animate-on-scroll">
+    <div class="em-head">Category</div><div class="em-head">Cost Driver</div><div class="em-head">Range (VL→VH)</div>
+    <div class="em-row"><div>Product</div><div>RELY — Required Reliability (safety-critical needs more testing)</div><div>0.82→1.26</div></div>
+    <div class="em-row"><div>Product</div><div>CPLX — Product Complexity (algorithms, data structures, AI)</div><div>0.73→1.74</div></div>
+    <div class="em-row"><div>Product</div><div>DATA — Database Size (larger DBs need more integration effort)</div><div>0.90→1.28</div></div>
+    <div class="em-row"><div>Platform</div><div>TIME — Execution Time Constraint (tight performance = complex optimization)</div><div>1.00→1.63</div></div>
+    <div class="em-row"><div>Platform</div><div>STOR — Main Storage Constraint (limited memory forces workarounds)</div><div>1.00→1.46</div></div>
+    <div class="em-row"><div>Personnel</div><div>ACAP — Analyst Capability (excellent analysts reduce effort significantly)</div><div>1.42→0.71</div></div>
+    <div class="em-row"><div>Personnel</div><div>PCAP — Programmer Capability (skilled coders produce quality work faster)</div><div>1.34→0.76</div></div>
+    <div class="em-row"><div>Personnel</div><div>PEXP — Platform Experience (familiar platform = fewer surprises)</div><div>1.19→0.85</div></div>
+    <div class="em-row"><div>Project</div><div>TOOL — Use of Software Tools (CI/CD, IDEs, CASE tools reduce effort)</div><div>1.17→0.78</div></div>
+    <div class="em-row"><div>Project</div><div>SITE — Multisite Development (geographic split increases communication cost)</div><div>1.22→0.80</div></div>
+    <div class="em-row"><div>Project</div><div>SCED — Required Schedule (BOTH compression AND stretch increase effort!)</div><div>1.43→1.43</div></div>
+  </div>
+
+  <h3 class="sub-title">Complete COCOMO II Worked Example</h3>
+  <div class="formula-box animate-on-scroll">
+    <div class="formula-eq">Project: Enterprise HR Management System — 100 KSLOC
+
+Scale Factors (all Nominal for simplicity):
+  E = 0.91 + (0.01 × 5 factors × 3.0 each) = 0.91 + 0.15 = 1.06
+
+Effort Multipliers (selective adjustments):
+  CPLX = High    = 1.17  (complex payroll calculations)
+  ACAP = High    = 0.85  (experienced analysts)
+  PCAP = High    = 0.88  (strong programming team)
+  TOOL = High    = 0.90  (good CI/CD tooling)
+  All others     = 1.0
+
+Combined EM = 1.17 × 0.85 × 0.88 × 0.90 = 0.787
+
+Effort = 2.94 × (100)^1.06 × 0.787
+       = 2.94 × 148.0 × 0.787
+       = 342 person-months
+
+Schedule = 3.67 × (342)^(0.28 + 0.2×(1.06−0.91))
+         = 3.67 × (342)^0.31
+         = 3.67 × 5.96
+         ≈ 22 months
+
+Staff = 342 ÷ 22 ≈ 15.5 people (average team size)</div>
+  </div>
+
+  <h2 class="section-title" data-num="8.5">Model Comparison</h2>
+  <table class="info-table animate-on-scroll">
+    <thead><tr><th>Criterion</th><th>Function Points</th><th>Putnam/SLIM</th><th>COCOMO II</th></tr></thead>
+    <tbody>
+      <tr><td>Basis</td><td>User functionality</td><td>Historical curve fitting</td><td>Parametric equations</td></tr>
+      <tr><td>Best Phase</td><td>Early — any phase</td><td>Schedule-driven projects</td><td>Post-Architecture phase</td></tr>
+      <tr><td>Key Strength</td><td>Language-independent</td><td>Shows schedule trade-offs</td><td>Rich calibration options</td></tr>
+      <tr><td>Key Limit</td><td>Counting can be subjective</td><td>Needs historical data</td><td>Needs size estimate first</td></tr>
+      <tr><td>Accuracy</td><td>±25% (good data)</td><td>±30–40%</td><td>±20% post-architecture</td></tr>
+    </tbody>
+  </table>
+
+  <div class="info-box blue animate-on-scroll">
+    <div class="ib-title">✅ Best Practices in Cost Estimation</div>
+    <ul>
+      <li><strong>Use multiple methods:</strong> Never rely on a single technique — triangulate with 2–3 models and take the range</li>
+      <li><strong>Document assumptions:</strong> Every estimate rests on assumptions — document them so you know what to re-estimate when reality deviates</li>
+      <li><strong>Track actuals:</strong> Build an internal database of completed projects — YOUR organization's data calibrates better than any generic model</li>
+      <li><strong>Add contingency:</strong> 10–15% for low-risk; 25–50% for high-risk projects with novel technology</li>
+      <li><strong>Re-estimate at milestones:</strong> Estimates improve as the project progresses — always re-estimate at end of each major phase</li>
+      <li><strong>Involve the team:</strong> Developers who will do the work should participate — Planning Poker in Agile captures this well</li>
+    </ul>
+  </div>
+
+  <div class="chapter-summary">
+    <h3>📚 Chapter 8 — Key Takeaways</h3>
+    <ul>
+      <li>Only 18% of software projects deliver on time and budget — poor estimation is the primary cause of failure</li>
+      <li>FPA measures functionality from the user's view using 5 components (EI, EO, EQ, ILF, EIF) with complexity weights</li>
+      <li>Putnam model: Size = C_k × Effort^(1/3) × Time^(4/3) — halving schedule multiplies effort by ~5.7</li>
+      <li>COCOMO II: Effort = 2.94 × Size^E × ΠEM — calibrated by 5 scale factors and 17 effort multipliers</li>
+      <li>Best practice: combine models, document assumptions, track actuals, add contingency, re-estimate at milestones</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════════════════
+     QUICK REFERENCE
+═══════════════════════════════════════════════════════════ -->
+<div id="quickref" class="qr-section">
+  <div class="qr-inner">
+    <div class="qr-title">Quick <span>Reference</span></div>
+    <p style="color:rgba(255,255,255,0.5);margin-bottom:1rem">CIT316 — Key acronyms, formulas, and model comparisons at a glance</p>
+
+    <h3 style="color:#f6c90e;font-family:var(--font-display);font-size:1.2rem;margin-top:2rem;margin-bottom:1rem">Key Acronyms</h3>
+    <div class="qr-grid">
+      <div class="qr-card"><div class="qr-abbr">SDLC</div><div class="qr-full">Software Development Life Cycle — structured phases for building software</div></div>
+      <div class="qr-card"><div class="qr-abbr">RAD</div><div class="qr-full">Rapid Application Development — fast prototyping methodology (60–90 days)</div></div>
+      <div class="qr-card"><div class="qr-abbr">JAD</div><div class="qr-full">Joint Application Design — intensive group requirements workshops</div></div>
+      <div class="qr-card"><div class="qr-abbr">GSS</div><div class="qr-full">Group Support System — anonymous parallel input for group decisions</div></div>
+      <div class="qr-card"><div class="qr-abbr">CASE</div><div class="qr-full">Computer-Aided Software Engineering — tools automating development tasks</div></div>
+      <div class="qr-card"><div class="qr-abbr">XP</div><div class="qr-full">Extreme Programming — Agile methodology emphasizing technical excellence</div></div>
+      <div class="qr-card"><div class="qr-abbr">TDD</div><div class="qr-full">Test-Driven Development — write tests BEFORE writing the code</div></div>
+      <div class="qr-card"><div class="qr-abbr">DBTF</div><div class="qr-full">Development Before the Fact — build correctness in from the start (Hamilton)</div></div>
+      <div class="qr-card"><div class="qr-abbr">FMap</div><div class="qr-full">Function Map — DBTF hierarchical behavior definition (AND/OR structure)</div></div>
+      <div class="qr-card"><div class="qr-abbr">TMap</div><div class="qr-full">Type Map — DBTF data type definition ensuring type safety</div></div>
+      <div class="qr-card"><div class="qr-abbr">OOD</div><div class="qr-full">Object-Oriented Design — organizing software around objects (4 pillars)</div></div>
+      <div class="qr-card"><div class="qr-abbr">SOLID</div><div class="qr-full">5 OOD principles: Single Resp, Open/Closed, Liskov, Interface Seg, DI</div></div>
+      <div class="qr-card"><div class="qr-abbr">UML</div><div class="qr-full">Unified Modeling Language — standard notation for software design</div></div>
+      <div class="qr-card"><div class="qr-abbr">CIA</div><div class="qr-full">Confidentiality, Integrity, Availability — information security triad</div></div>
+      <div class="qr-card"><div class="qr-abbr">COBIT</div><div class="qr-full">Control Objectives for IT — ISACA's IT governance &amp; audit framework</div></div>
+      <div class="qr-card"><div class="qr-abbr">FPA</div><div class="qr-full">Function Point Analysis — language-independent software size metric</div></div>
+      <div class="qr-card"><div class="qr-abbr">COCOMO</div><div class="qr-full">Constructive Cost Model II — Boehm's algorithmic estimation (2.94 × Size^E × ΠEM)</div></div>
+      <div class="qr-card"><div class="qr-abbr">SLIM</div><div class="qr-full">Software LIfecycle Model — Putnam's Rayleigh-based estimation tool</div></div>
+      <div class="qr-card"><div class="qr-abbr">SLA</div><div class="qr-full">Service Level Agreement — documented performance commitments &amp; penalties</div></div>
+      <div class="qr-card"><div class="qr-abbr">UAT</div><div class="qr-full">User Acceptance Testing — end-user validation before go-live</div></div>
+      <div class="qr-card"><div class="qr-abbr">CMMI</div><div class="qr-full">Capability Maturity Model Integration — 5-level process maturity scale</div></div>
+      <div class="qr-card"><div class="qr-abbr">UPO</div><div class="qr-full">Universal Primitive Operations — Create, Access, Modify, Delete, Evaluate</div></div>
+    </div>
+
+    <h3 style="color:#f6c90e;font-family:var(--font-display);font-size:1.2rem;margin-top:2.5rem;margin-bottom:1rem">Key Formulas</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1rem">
+      <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:1.4rem">
+        <div style="color:#f6c90e;font-weight:700;margin-bottom:0.6rem">📐 COCOMO II</div>
+        <code style="font-family:var(--font-mono);font-size:0.82rem;color:#a5f3fc;display:block;line-height:1.8">
+          Effort = 2.94 × Size^E × ΠEM<br>
+          E = 0.91 + 0.01 × ΣSF<br>
+          Schedule = 3.67 × Effort^(0.28+0.2(E-0.91))<br>
+          Staff = Effort ÷ Schedule
+        </code>
+      </div>
+      <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:1.4rem">
+        <div style="color:#f6c90e;font-weight:700;margin-bottom:0.6rem">📐 Putnam Model</div>
+        <code style="font-family:var(--font-mono);font-size:0.82rem;color:#a5f3fc;display:block;line-height:1.8">
+          Size = C_k × Effort^(1/3) × Time^(4/3)<br>
+          C_k = 2 (poor) | 8 (good) | 11 (excellent)<br>
+          Effort = (Size/C_k)³ / Time⁴
+        </code>
+      </div>
+      <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:1.4rem">
+        <div style="color:#f6c90e;font-weight:700;margin-bottom:0.6rem">📐 Function Points</div>
+        <code style="font-family:var(--font-mono);font-size:0.82rem;color:#a5f3fc;display:block;line-height:1.8">
+          UFP = Σ(Count × Weight)<br>
+          AFP = UFP × (0.65 + 0.01 × ΣGSCs)<br>
+          Effort = AFP ÷ Productivity Rate
+        </code>
+      </div>
+      <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:1.4rem">
+        <div style="color:#f6c90e;font-weight:700;margin-bottom:0.6rem">📐 Maintenance Cost</div>
+        <code style="font-family:var(--font-mono);font-size:0.82rem;color:#a5f3fc;display:block;line-height:1.8">
+          Annual Cost = Dev Cost × Factor<br>
+          Factor = 0.05 (simple) to 0.15 (complex)<br>
+          Typical: 10% of original dev cost/year
+        </code>
+      </div>
+    </div>
+
+    <h3 style="color:#f6c90e;font-family:var(--font-display);font-size:1.2rem;margin-top:2.5rem;margin-bottom:1rem">SDLC Model Quick Comparison</h3>
+    <div style="overflow-x:auto">
+      <table class="info-table" style="background:#111">
+        <thead style="background:rgba(246,201,14,0.1)">
+          <tr>
+            <th style="color:#f6c90e">Model</th>
+            <th style="color:#f6c90e">Best For</th>
+            <th style="color:#f6c90e">Key Advantage</th>
+            <th style="color:#f6c90e">Key Risk</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="color:rgba(255,255,255,0.8)"><td>Waterfall</td><td>Fixed requirements, small teams</td><td>Simple, clear milestones</td><td>No change accommodation</td></tr>
+          <tr style="color:rgba(255,255,255,0.8)"><td>Iterative</td><td>Evolving requirements</td><td>Early working software</td><td>Scope creep risk</td></tr>
+          <tr style="color:rgba(255,255,255,0.8)"><td>Spiral</td><td>Large, high-risk projects</td><td>Systematic risk reduction</td><td>Complex management overhead</td></tr>
+          <tr style="color:rgba(255,255,255,0.8)"><td>Agile/Scrum</td><td>Fast-changing business needs</td><td>Continuous delivery &amp; feedback</td><td>Needs strong team discipline</td></tr>
+          <tr style="color:rgba(255,255,255,0.8)"><td>RAD</td><td>Business apps, tight deadlines</td><td>Speed — 60–90 days</td><td>Quality risk if rushed</td></tr>
+          <tr style="color:rgba(255,255,255,0.8)"><td>V-Model</td><td>Safety-critical systems</td><td>Every phase has paired test</td><td>Cannot handle change</td></tr>
+          <tr style="color:rgba(255,255,255,0.8)"><td>XP</td><td>Small teams, changing reqs</td><td>Technical excellence culture</td><td>Requires expert, committed team</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p><strong>CIT316 — Advanced Software Design</strong> | SLTC Research University</p>
+  <p>Built with ❤️ by <a style="color: rgba(255,255,255,0.5); text-decoration: none;" href="https://www.linkedin.com/in/mihirchakma/" target="_blank">Mihir Chakma</a></p>
+  <p style="margin-top:0.4rem;opacity:0.5">Covers all 8 syllabus topics · 4 Learning Outcomes · All levels from beginner to expert</p>
+</footer>
+
+<a href="#" class="back-top" id="backTop">↑</a>
+
+<script src="script.js"></script>
+
+</body>
+</html>
